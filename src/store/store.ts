@@ -1,7 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import userReducer from "./reducers/UserSlice";
 
 //создан корневой редюсер (можно использовать просто объект)
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ userReducer });
 
 //функция для конфига redux store, используем configureStore из redux toolkit
 export const setupStore = () => {
